@@ -4,19 +4,27 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js"></script>
         <title>Basic Web App Demo</title>
     </head>
     <body>
         <header>
-
+            <h1>Welcome to the JavaScript Web Development App Demo</h1>
         </header>
-        <body>
-
-        </body>
+        <main>
+            <h2>Select a Demo You Would Like to Try</h2>
+            <h3>Inspect page and go to console to see results</h3>
+            <div class="flexbox-center-center button-box">
+                <button id="var_demo" onclick=variableTypesDemo()>Run Function Demo</button>
+                <button id="conditional_demo" onclick=conditionalDemo()>Run Conditional Demo</button>
+                <button id="loop_demo" onclick=loopDemo()>Run Loop Demo</button>
+                <button id="function_demo" onclick=functionDemo()>Run Function Demo</button>
+            </div>
+        </main>
         <footer>
-            
+            <p>Made by Corbin Spence</p>
         </footer>
     </body>
 </html>

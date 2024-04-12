@@ -37,6 +37,7 @@ function variableTypesDemo(){
     console.log("Value of v out of if statement is "+v)
      
     console.log("Declaring a variable with const makes unable to change and creates an error if you try to change it")
+    alert("Variable demo completed!")
 }
 
 function conditionalDemo(){
@@ -85,6 +86,7 @@ function conditionalDemo(){
     }else{
         console.log("b is equal to c")
     }
+    alert("Conditional demo completed!")
 }
 
 function loopDemo(){
@@ -118,6 +120,7 @@ function loopDemo(){
         console.log("Current value of i: "+ i)
     }
     console.log("\nFor loops help make the structure and duration of the loop more concise and straight forward.\n")
+    alert("Loop demo completed!")
 }
 
 function functionDemo(){
@@ -135,10 +138,5 @@ function functionDemo(){
     console.log("Return value using 6 an 3: "+doSomething(6,3))
     console.log("Return value using 5 an 5: "+doSomething(5,5))
     console.log("\nNote: a function does not need a return statement, and a function that does not have a return statement is called a void function.\n")
+    alert("Function demo completed!")
 }
-
-// Running Demos
-variableTypesDemo()
-conditionalDemo()
-loopDemo()
-functionDemo()
