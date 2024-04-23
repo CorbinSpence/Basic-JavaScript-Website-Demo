@@ -5,12 +5,15 @@
     justify-content: center;
     gap: 10%;
 }
+.flex-cols{
+    flex-direction: column;
+}
 body{
     margin: 0px;
 }
 .button-box{
     width: inherit;
-    height: 300px;
+    height: fit-content;
 }
 header, footer{
     background-color: aqua;
@@ -31,7 +34,7 @@ main{
 main h2{
     margin-top: 0px;
 }
-button{
+.demo-button{
     padding: 10px;
     border-radius: 10px;
     border: 2px dotted black;
@@ -40,4 +43,43 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+table{
+    gap: 0px;
+}
+.linear-gradient{
+    background-image: linear-gradient(blue, lightskyblue ,blue);
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+.radial-gradient{
+    background-image: radial-gradient(blue, lightskyblue ,blue);
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+.conic-gradient{
+    background-image: conic-gradient(blue, lightskyblue ,blue);
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.padding-20{
+    padding: 20px;
+}
+h4{
+    text-decoration: underline;
+}
+.margin-b-40{
+    margin-bottom: 40px;
+}
+#gen-text{
+    border-top: 1px solid black;
+}
+label{
+    margin-top: auto;
+    margin-bottom: auto;
 }

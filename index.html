@@ -16,11 +16,111 @@
         <main>
             <h2>Select a Demo You Would Like to Try</h2>
             <h3>Inspect page and go to console to see results</h3>
-            <div class="flexbox-center-center button-box">
-                <button id="var_demo" onclick=variableTypesDemo()>Run Function Demo</button>
-                <button id="conditional_demo" onclick=conditionalDemo()>Run Conditional Demo</button>
-                <button id="loop_demo" onclick=loopDemo()>Run Loop Demo</button>
-                <button id="function_demo" onclick=functionDemo()>Run Function Demo</button>
+            <div class="flexbox-center-center button-box margin-b-40">
+                <button id="var_demo" onclick=variableTypesDemo() class="demo-button">Run Function Demo</button>
+                <button id="conditional_demo" onclick=conditionalDemo() class="demo-button">Run Conditional Demo</button>
+                <button id="loop_demo" onclick=loopDemo() class="demo-button">Run Loop Demo</button>
+                <button id="function_demo" onclick=functionDemo() class="demo-button">Run Function Demo</button>
+            </div>
+            <div id="gen-text" class="flexbox-center-center flex-cols button-box">
+                <div class="conic-gradient padding-20">
+                    <h3>List of Days</h3>
+                    <ul>
+                        <li>Sunday</li>
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                    </ul>
+                </div>
+                <div class="linear-gradient padding-20">
+                    <h3>Table of Students</h3>
+                    <table>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Number</th>
+                            <th>Letter Grade</th>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>00000000</td>
+                            <td>-Z</td>
+                        </tr>
+                        <tr>
+                            <td>chengyue</td>
+                            <td>111111</td>
+                            <td>+A</td>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                    </table>
+                </div>
+               <div class="radial-gradient padding-20">
+                <h3> Form Sample </h3>
+                <form class="flexbox-center-center flex-cols">
+                    <div>
+                        <h4>Text Box</h4>
+                        <label for="name">Type your name:</label>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                    <div>
+                        <h4>Text Area</h4>
+                        <label for="summary">Tell me about your self:</label>
+                        <textarea id="summary" name="summary"></textarea>
+                    </div>
+                    <div>
+                        <h4>Button via "input" element</h4>
+                        <input type="button" value="My button" id="in_button">
+                    </div>
+                    <div>
+                        <h4>Button via "button" element</h4>
+                        <button id="el_button">My other Button</button>
+                    </div>
+                    <div>
+                        <h4>Drop Selection</h4>
+                        <label for="select day">Select Day</label>
+                        <select id="sel_day" name="select day">
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Wednesday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Radio Button</h4>
+                        <label for="mushrooms">mushrooms</label>
+                        <input type="radio" name="pizza" value="mushrooms"/>
+                        <br>
+                        <label for="sausage">sausage</label>
+                        <input type="radio" name="pizza" value="sausage"/>
+                        <br>
+                        <label for="pepperoni">pepperoni</label>
+                        <input type="radio" name="pizza" value="pepperoni"/>
+                    </div>
+                    <div>
+                        <h4>Checkboxes</h4>
+                        <label for="lettuce">lettuce</label>
+                        <input type="checkbox" name="burger" value="lettuce"/>
+                        <br>
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" name="burger" value="tomato"/>
+                        <br>
+                        <label for="pickles">mushrooms</label>
+                        <input type="checkbox" name="burger" value="pickles"/>
+                    </div>
+                    <div>
+                        <h4>Submit Button</h4>
+                        <input type="submit" value="Submit"/>
+                    </div>
+
+                </form>
+               </div>
             </div>
         </main>
         <footer>
