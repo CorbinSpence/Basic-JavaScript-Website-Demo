@@ -140,3 +140,37 @@ function functionDemo(){
     console.log("\nNote: a function does not need a return statement, and a function that does not have a return statement is called a void function.\n")
     alert("Function demo completed!")
 }
+
+function printStuff(){
+    form = document.getElementById("example-form")
+
+    textbox = document.getElementById("name")
+    console.log("Textbox value:")
+    console.log(textbox.value)
+
+    textArea = document.getElementById("summary")
+    console.log("Text Area value:")
+    console.log(textArea.value)
+
+    dropSelect = document.getElementById("sel_day")
+    console.log("Drop Select value:")
+    console.log(dropSelect.value)
+
+    Buttons = document.getElementsByTagName("input")
+    console.log()
+    console.log()
+
+    console.log("Radio values:")
+    for(let i=0; i<Buttons.length; i++){
+        if(Buttons[i].type === "radio" && Buttons[i].checked){
+            console.log(Buttons[i].value)
+        }
+    }
+
+    console.log("Checkbox values:")
+    for(let i=0; i<Buttons.length; i++){
+        if(Buttons[i].type === "checkbox" && Buttons[i].checked){
+            console.log(Buttons[i].value)
+        }
+    }
+}

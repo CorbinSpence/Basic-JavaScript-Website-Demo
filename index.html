@@ -60,7 +60,7 @@
                 </div>
                <div class="radial-gradient padding-20">
                 <h3> Form Sample </h3>
-                <form class="flexbox-center-center flex-cols">
+                <form class="flexbox-center-center flex-cols" id="example-form">
                     <div>
                         <h4>Text Box</h4>
                         <label for="name">Type your name:</label>
@@ -115,8 +115,8 @@
                         <input type="checkbox" name="burger" value="pickles"/>
                     </div>
                     <div>
-                        <h4>Submit Button</h4>
-                        <input type="submit" value="Submit"/>
+                        <h4>Submit Button (check console when pressed)</h4>
+                        <input type="button" value="Submit" id="submit" onclick=printStuff() />
                     </div>
 
                 </form>
